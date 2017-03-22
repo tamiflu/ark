@@ -88,3 +88,5 @@ inc/
 
 tmp/
 local/
+cpanfile.snapshot
+*.db
