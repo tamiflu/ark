@@ -32,6 +32,11 @@ __PACKAGE__->add_columns(
         size        => 255,
         is_nullable => 0,
     },
+    location     => {
+        data_type   => 'VARCHAR',
+        size        => 255,
+        is_nullable => 0,
+    },
     description  => {
         data_type   => 'TEXT',
         is_nullable => 0,
