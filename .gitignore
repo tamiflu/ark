@@ -86,4 +86,5 @@ inc/
 /pm_to_blib
 /*.zip
 
-tmp
+tmp/
+local/
