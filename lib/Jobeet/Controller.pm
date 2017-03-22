@@ -1,4 +1,7 @@
 package Jobeet::Controller;
+use v5.20.3;
+use strict;
+use warnings;
 use Ark 'Controller';
 use Jobeet::Models;
 

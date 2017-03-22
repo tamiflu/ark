@@ -22,7 +22,7 @@ Jobeet is
 
 =head1 AUTHOR
 
-y E<lt>yE<gt>
+tamiflu E<lt>koike-daichi@kayac.comE<gt>
 
 =head1 SEE ALSO
 
