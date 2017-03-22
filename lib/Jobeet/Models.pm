@@ -4,7 +4,7 @@ use warnings;
 use Ark::Models '-base';
 
 register Schema => sub {
-        my $self - shift;
+        my $self = shift;
 
         my $conf = $self->get('conf')->{database} or die 'require database config';
 
