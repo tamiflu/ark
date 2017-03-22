@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PERL5_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$USER_HOME$/perl5/lib/perl5">
+      <sourceFolder url="file://$USER_HOME$/perl5/lib/perl5" type="perl-library" />
+      <excludeFolder url="file://$USER_HOME$/perl5/lib/perl5" />
+    </content>
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" type="perl-library" />
+    </content>
+    <orderEntry type="module-library">
+      <library name="Perl5 library: /Users/koike-daichi/perl5/lib/perl5">
+        <CLASSES>
+          <root url="file://$USER_HOME$/perl5/lib/perl5" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Perl5 library: /Users/koike-daichi/work/Jobeet">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="Perl v5.20.3 (darwin-2level)" jdkType="Perl5 Interpreter" />
+  </component>
+</module>
