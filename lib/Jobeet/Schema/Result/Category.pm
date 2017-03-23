@@ -46,13 +46,10 @@ sub get_active_jobs {
     my $self = shift;
     my $attr = shift || { };
 
-    $attr->{rows} ||= 10;
-
     $self->jobs(
-        { expires_at => { '>=', models('Schema')->now } },
-        {
-            order_by => { -desc => 'created_at' },
-            row      => $attr->{rows},
+        { expires_at => { '>=', models('Schema')->now->strftime("%F %T") } },
+        { order_by => { -desc => 'created_at' },
+                defined $attr->{rows} ? (rows => $attr->{rows}) : (),
         }
     );
 }
