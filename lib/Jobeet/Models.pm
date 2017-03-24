@@ -2,6 +2,7 @@ package Jobeet::Models;
 use strict;
 use warnings;
 use Ark::Models '-base';
+use Cache::FastMmap;
 
 register Schema => sub {
         my $self = shift;
@@ -28,6 +29,16 @@ autoloader qr/^Schema::/ => sub {
                     $schema->resultset($t);
                 })
         }
+    };
+
+register cache => sub {
+        my $self = shift;
+
+        my $conf = $self->get('conf')->{cache}
+            or die 'require cache config';
+
+        $self->ensure_class_loaded('Cache::FastMmap');
+        Cache::FastMmap->new(%$conf);
     };
 
 1;

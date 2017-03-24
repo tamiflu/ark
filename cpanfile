@@ -12,3 +12,5 @@ requires 'DateTime::Format::SQLite';
 requires 'String::CamelCase';
 requires 'Data::Page::Navigation';
 requires 'CGI::Simple';
+requires 'Cache::FastMmap';
+
