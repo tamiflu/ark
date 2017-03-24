@@ -90,3 +90,4 @@ tmp/
 local/
 cpanfile.snapshot
 *.db
+.idea/
