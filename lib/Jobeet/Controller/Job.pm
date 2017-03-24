@@ -68,4 +68,14 @@ sub delete :Chained('job') :PathPart {
     $c->redirect( $c->uri_for('/job') );
 }
 
+# /job/{job_token}/publish
+sub publish :Chained('job') :PathPart {
+    my ($self, $c) = @_;
+
+    my $job = $c->stash->{job};
+
+    $job->publish;
+    $c->redirect( $c->uri_for('/job', $job->token) );
+}
+
 1;
