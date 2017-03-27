@@ -67,10 +67,11 @@
           </span>
             <ul>
                 <li><a href="">About Jobeet</a></li>
-                <li class="feed"><a href="">Full feed</a></li>
+                <li class="feed"><a href="<?= $c->uri_for('/job/atom') ?>">Full feed</a></li>
                 <li><a href="">Jobeet API</a></li>
                 <li class="last"><a href="">Affiliates</a></li>
             </ul>
+            <link rel="alternate" type="application/atom+xml" title="Latest Jobs" href="<?= $c->uri_for('/job/atom') ?>" />
         </div>
     </div>
 </div>

@@ -13,4 +13,4 @@ requires 'String::CamelCase';
 requires 'Data::Page::Navigation';
 requires 'CGI::Simple';
 requires 'Cache::FastMmap';
-
+requires 'DateTime::Format::W3CDTF';
