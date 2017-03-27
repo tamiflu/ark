@@ -1,10 +1,3 @@
-use strict;
-use warnings;
-use DateTime;
-
-use Jobeet::Models;
-use Jobeet::Test;
-
 # create default Categories
 for my $category_name (qw/Design Programming Manager Administrator/) {
     models('Schema::Category')->create({
